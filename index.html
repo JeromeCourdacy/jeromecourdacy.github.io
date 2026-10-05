@@ -1,249 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Your Name | Portfolio</title>
-  <meta
-    name="description"
-    content="Student portfolio featuring projects, experience, and contact information."
-  />
+    <title>Jérôme Courdacy | Portfolio</title>
+    <meta name="description" content="Jérôme Courdacy — EPFL Robotics master’s student with a Data Science minor. Computer vision research, autonomous robotics, embedded AI, and engineering projects." />
 
-  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="gallery.js" defer></script>
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="logo" href="#top">Your Name</a>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="logo" href="#top">JC</a>
 
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-content">
-        <p class="eyebrow">Student · Developer · Builder</p>
-
-        <h1>
-          Hi, I’m Your Name.
-          <span>I build useful things with code.</span>
-        </h1>
-
-        <p class="hero-text">
-          I’m a university student interested in software development,
-          engineering, and technology. This site is a collection of my
-          projects, experience, and the things I’m currently learning.
-        </p>
-
-        <div class="hero-actions">
-          <a class="button primary-button" href="#projects">
-            View my projects
-          </a>
-
-          <a
-            class="button secondary-button"
-            href="https://github.com/YOUR-USERNAME"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#top">Contact</a>
+            </nav>
         </div>
-      </div>
-    </section>
+    </header>
 
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">Selected work</p>
-          <h2>Projects</h2>
-          <p>
-            A few things I’ve built through university, personal work,
-            and collaborations.
-          </p>
-        </div>
+    <main id="top">
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Jérôme Courdacy</h1>
+                <p class="hero-subtitle">Master’s in Robotics · Minor in Data Science at EPFL</p>
 
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-top">
-              <span class="project-number">01</span>
-              <span class="project-status">Public</span>
+                <div class="hero-contact" id="contact" aria-label="Contact links">
+                    <a href="mailto:jcourdacy@icloud.com">jcourdacy@icloud.com</a>
+                    <a href="https://github.com/JeromeCourdacy" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/jerome-courdacy" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+
+
             </div>
-
-            <h3>Project One</h3>
-
-            <p>
-              Write two or three sentences explaining what the project does,
-              why you built it, and what part you personally worked on.
-            </p>
-
-            <div class="tags">
-              <span>Python</span>
-              <span>Flask</span>
-              <span>PostgreSQL</span>
-            </div>
-
-            <a
-              class="project-link"
-              href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View project →
+            <a class="scroll-cue" href="#projects" aria-label="Scroll down to projects">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 4v16m-6-6 6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
             </a>
-          </article>
+        </section>
 
-          <article class="project-card">
-            <div class="project-top">
-              <span class="project-number">02</span>
-              <span class="project-status private">Private source</span>
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Projects</h2>
+                    <p>
+                        Projects in autonomous robotics, embedded sensing, computer vision,
+                        and data analysis at EPFL and its student teams.
+                    </p>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-media" aria-label="Robopoly project photos">
+                            <a href="media/Robotics%20comp%201.jpg" target="_blank" rel="noopener noreferrer">
+                                <img src="media/Robotics%20comp%201.jpg" alt="The autonomous red robot navigating the competition course" width="4071" height="6106" loading="lazy" decoding="async" />
+                            </a>
+                            <a href="media/Robotics%20comp%202.jpg" target="_blank" rel="noopener noreferrer">
+                                <img src="media/Robotics%20comp%202.jpg" alt="Overhead view of the robot and competition track" width="5980" height="3987" loading="lazy" decoding="async" />
+                            </a>
+                            <a href="media/Robotics%20comp%203.jpg" target="_blank" rel="noopener noreferrer">
+                                <img src="media/Robotics%20comp%203.jpg" alt="Robot assembly with Raspberry Pi, camera, motors, and chassis components" width="750" height="1063" loading="lazy" decoding="async" />
+                            </a>
+                        </div>
+
+                        <h3>Robopoly Robotics Competition</h3>
+
+                        <p>
+                            Our team won a robotics competition organized by Robopoly with an autonomous
+                            robot we designed and built from scratch. The robot followed lines, navigated
+                            corridors, acquired targets, and shot at them.
+                        </p>
+
+                        <p>
+                            We set ourselves an extra challenge: use a single camera for all perception
+                            tasks. With a Raspberry Pi and a Pi Camera, we tackled every stage of the
+                            competition using the same visual input.
+                        </p>
+
+                        <div class="tags">
+                            <span>Autonomous robotics</span>
+                            <span>Computer vision</span>
+                            <span>Raspberry Pi</span>
+                            <span>Pi Camera</span>
+                        </div>
+
+
+
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-media" aria-label="EPFL Racing Team project photo">
+                            <a href="media/Racing%20Team.png" target="_blank" rel="noopener noreferrer">
+                                <img src="media/Racing%20Team.png" alt="EPFL Racing Team race car" width="1222" height="812" loading="lazy" decoding="async" />
+                            </a>
+                        </div>
+                        <h3>Suspension Load-Cell Integration</h3>
+                        <p>
+                            I’m leading the integration of suspension load cells for the EPFL Racing Team
+                            to improve vehicle dynamics modelling and support control development.
+                        </p>
+                        <p>
+                            I defined sensing requirements and evaluated hardware solutions, including
+                            outreach to potential industry sponsors. I’m developing the mechanical,
+                            electrical, and software integration of the sensors, including data
+                            acquisition and calibration.
+                        </p>
+                        <div class="tags">
+                            <span>Embedded sensing</span>
+                            <span>Vehicle dynamics</span>
+                            <span>Data acquisition</span>
+                            <span>Calibration</span>
+                        </div>
+
+
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-media" aria-label="GenoRobotics project logo">
+                            <a href="media/Genorobotics.png" target="_blank" rel="noopener noreferrer">
+                                <img src="media/Genorobotics.png" alt="GenoRobotics logo" width="1191" height="843" loading="lazy" decoding="async" />
+                            </a>
+                        </div>
+                        <h3>Edge AI for Biodiversity Monitoring</h3>
+                        <p>
+                            I’m developing embedded edge devices for automated biodiversity monitoring
+                            using audio machine learning with GenoRobotics.
+                        </p>
+                        <p>
+                            The project brings bird-call classification and localization to ESP32-based
+                            hardware for real-time, on-device inference. My work includes integrating
+                            and deploying embedded sensing and machine learning components for
+                            autonomous field monitoring.
+                        </p>
+                        <div class="tags">
+                            <span>ESP32</span>
+                            <span>Edge AI</span>
+                            <span>Audio machine learning</span>
+                            <span>Biodiversity</span>
+                        </div>
+
+
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-media" aria-label="UNO game state recognition results">
+                            <a href="media/uno%20cv%20project.png" target="_blank" rel="noopener noreferrer">
+                                <img src="media/uno%20cv%20project.png" alt="UNO vision pipeline output with detected cards, players, and current-player token" width="876" height="584" loading="lazy" decoding="async" />
+                            </a>
+                        </div>
+
+                        <h3>UNO Game State Recognition</h3>
+
+                        <p>
+                            For an image analysis course, our team built a vision pipeline that reconstructs
+                            the state of an UNO game from a single image, across varied backgrounds.
+                            It identifies the cards held by each player, the cards in the center,
+                            and the current player.
+                        </p>
+
+                        <p>
+                            We combined classical computer vision techniques with a neural network
+                            we built and trained to classify UNO card symbols, using Python and PyTorch.
+                            Our solution achieved <strong>98% accuracy on the test dataset</strong>,
+                            up from a baseline of 63%.
+                        </p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>PyTorch</span>
+                            <span>Computer vision</span>
+                            <span>Neural networks</span>
+                        </div>
+
+
+
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-media" aria-label="Autonomous mobile robotics demonstration">
+                            <figure>
+                                <video controls playsinline preload="none" poster="media/mobile-robot-poster.jpg" aria-label="Mobile robot navigation demo">
+                                    <source src="media/mobile%20rob%20video.mov" />
+                                    <a href="media/mobile%20rob%20video.mov">Open mobile robot navigation demo</a>
+                                </video>
+                            </figure>
+                        </div>
+
+                        <h3>Autonomous Mobile Robotics</h3>
+
+                        <p>
+                            Our team built a Thymio robot navigation system that reached a target while
+                            avoiding mapped obstacles and reacting to unexpected obstacles using proximity sensors.
+                        </p>
+
+                        <p>
+                            The system combined overhead camera tracking with ArUco markers, A* path
+                            planning, and an Extended Kalman Filter to fuse vision and wheel odometry.
+                        </p>
+
+                        <p>
+                            <strong>My contributions:</strong> computer vision and local obstacle avoidance,
+                            including camera calibration, obstacle detection, and reactive navigation.
+                        </p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>Thymio</span>
+                            <span>ArUco</span>
+                            <span>A*</span>
+                            <span>Sensor fusion</span>
+                        </div>
+
+
+
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-media" aria-label="Copycat Portfolios data story">
+                            <a href="media/Copycat.png" target="_blank" rel="noopener noreferrer">
+                                <img src="media/Copycat.png" alt="Copycat Portfolios data story preview" width="2978" height="1572" loading="lazy" decoding="async" />
+                            </a>
+                        </div>
+
+                        <h3>Copycat Portfolios</h3>
+
+                        <p>
+                            Can copying politicians’ stock trades outperform the market? For EPFL’s
+                            Applied Data Analysis course, our team combined US congressional trading
+                            disclosures with historical stock prices to study politicians’ portfolios
+                            and simulate strategies that copy their trades after disclosure.
+                        </p>
+
+                        <p>
+                            We explored how disclosure delays and the selection of politicians affect
+                            performance, comparing returns and risk-adjusted metrics against an
+                            S&amp;P 500 benchmark. The project brings together data preparation,
+                            portfolio simulation, statistical analysis, and a dedicated data story website.
+                            We identified a market-outperforming strategy based on public disclosures
+                            of US politicians’ trades in our analysis.
+                        </p>
+
+                        <p>
+                            <strong>My contributions:</strong> led the copycat strategy analysis,
+                            contributed to data cleaning and preprocessing, and wrote the website
+                            introduction while maintaining a consistent writing style across the story.
+                        </p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Data analysis</span>
+                            <span>Portfolio simulation</span>
+                            <span>Data visualization</span>
+                        </div>
+
+
+
+
+                        <div class="project-link">
+                            <a href="https://ada-2025-project-adaptateurusbversu.vercel.app/" target="_blank"
+                                rel="noopener noreferrer">Explore the data story →</a>
+                            <br />
+                            <a href="https://github.com/JeromeCourdacy/Copycat-Portfolios" target="_blank"
+                                rel="noopener noreferrer">View source on GitHub →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-media" aria-label="Drone racing demonstrations">
+                            <figure>
+                                <video controls playsinline preload="none" poster="media/drone-simulation-poster.jpg" aria-label="Webots simulation demo">
+                                    <source src="media/drone%20sim%20video.mov" />
+                                    <a href="media/drone%20sim%20video.mov">Open webots simulation demo</a>
+                                </video>
+                            </figure>
+                            <figure>
+                                <video controls playsinline preload="none" poster="media/drone-hardware-poster.jpg" aria-label="Crazyflie hardware demo">
+                                    <source src="media/Drone%20video.mp4" />
+                                    <a href="media/Drone%20video.mp4">Open crazyflie hardware demo</a>
+                                </video>
+                            </figure>
+                        </div>
+
+                        <h3>Vision-Based Autonomous Drone Racing</h3>
+
+                        <p>
+                            Our team developed the vision and control components for a Crazyflie
+                            quadcopter, with the goal of flying through a series of gates as quickly
+                            as possible. We first built the system in Webots simulation, then
+                            implemented it on the real quadcopter in the lab, taking the project
+                            from a simulated environment to physical hardware. The pipeline combined
+                            gate detection, navigation, and closed-loop control, with real-time gate
+                            finding and autonomous navigation on the physical platform.
+                        </p>
+
+                        <div class="tags">
+                            <span>Aerial robotics</span>
+                            <span>Computer vision</span>
+                            <span>Control</span>
+                            <span>Webots</span>
+                            <span>Crazyflie</span>
+                        </div>
+
+
+
+                    </article>
+                </div>
             </div>
+        </section>
 
-            <h3>Private Project</h3>
+        <section class="section alternate-section" id="experience">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Experience</h2>
+                </div>
 
-            <p>
-              Describe the problem, your contribution, and the technologies
-              you used without revealing private or proprietary code.
-            </p>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-date">Sep 2026 — Present</div>
+                        <div class="timeline-content">
+                            <h3>Computer Vision Student Researcher</h3>
+                            <p class="organization organization-with-logo">
+                                <img class="experience-logo" src="media/wasteflow_ai_logo.jpg" alt="" width="48" height="36" loading="lazy" decoding="async" />
+                                <span>Wasteflow AI · Lausanne, Switzerland</span>
+                            </p>
+                            <p>I benchmark and evaluate computer vision methods to improve an industrial waste instance-segmentation pipeline for edge deployment. I assess waste detection, instance segmentation, and mass estimation on conveyor belts under real-time constraints, and build a comparative evaluation framework to identify methods suitable for integration into the production pipeline.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-date">Sep 2025 — Jul 2026</div>
+                        <div class="timeline-content">
+                            <h3>Teaching Assistant</h3>
+                            <p class="organization organization-with-logo">
+                                <img class="experience-logo" src="media/epfl%20logo.png" alt="" width="48" height="36" loading="lazy" decoding="async" />
+                                <span>EPFL · Lausanne, Switzerland</span>
+                            </p>
+                            <p>Supported students in Linear Algebra and Calculus II exercise sessions and helped instructors organize examinations.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-date">Jun — Jul 2025</div>
+                        <div class="timeline-content">
+                            <h3>R&amp;D Intern</h3>
+                            <p class="organization organization-with-logo">
+                                <img class="experience-logo" src="media/mdsim_logo.jpg" alt="" width="48" height="36" loading="lazy" decoding="async" />
+                                <span>MDsim · Esch-Belval, Luxembourg</span>
+                            </p>
+                            <p>Validated and benchmarked DICOM-to-NIfTI conversion pipelines for medical imaging, checking 3D volumes for spatial orientation, scaling, and resolution. Automated the processing of over 1,000 CT scans and developed Python tools to correct scan orientations and slicing planes. Resolved conversion edge cases, performed CT segmentation quality assurance, and annotated X-ray and CT datasets to support computer vision model training.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-date">Jul 2024</div>
+                        <div class="timeline-content">
+                            <h3>Machining Intern</h3>
+                            <p class="organization organization-with-logo">
+                                <img class="experience-logo" src="media/etml_lausanne_logo.jpg" alt="" width="48" height="36" loading="lazy" decoding="async" />
+                                <span>École des Métiers de Lausanne · Lausanne, Switzerland</span>
+                            </p>
+                            <p>Trained in the manual use of lathes, milling machines, and welding. Independently machined parts from technical drawings.</p>
+                        </div>
+                    </article>
+                </div>
 
-            <div class="tags">
-              <span>JavaScript</span>
-              <span>REST API</span>
-              <span>SQL</span>
+                <details class="other-experience">
+                    <summary>Other experience</summary>
+                    <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-date">Feb — Jun 2024</div>
+                        <div class="timeline-content">
+                            <h3>Thermodynamics Tutor</h3>
+                            <p class="organization">Lausanne, Switzerland</p>
+                            <p>Provided thermodynamics lessons to a first-year student.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-date">Sep 2023 — Jul 2024</div>
+                        <div class="timeline-content">
+                            <h3>Microengineering Section Coach</h3>
+                            <p class="organization">EPFL · Lausanne, Switzerland</p>
+                            <p>Helped a group of microengineering students settle into life at EPFL, providing guidance and helping organize events to support their integration into the university community.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-date">Sep 2021 — Jun 2022</div>
+                        <div class="timeline-content">
+                            <h3>Volunteer</h3>
+                            <p class="organization">Saint-Vincent de Lérins · Cannes, France</p>
+                            <p>Helped organize and distribute essential supplies donated by food banks.</p>
+                        </div>
+                    </article>
+                    </div>
+                </details>
             </div>
+        </section>
 
-            <p class="project-note">
-              Source code is private due to project ownership restrictions.
-            </p>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top">
-              <span class="project-number">03</span>
-              <span class="project-status course">Course project</span>
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Education</h2>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-date">Sep 2025 — Jul 2028<br />Expected completion</div>
+                        <div class="timeline-content">
+                            <h3>Master’s in Robotics</h3>
+                            <p class="organization">EPFL · Lausanne, Switzerland</p>
+                            <p>Minor in Data Science.</p>
+                            <a class="transcript-link" href="Master%20transcript.pdf" target="_blank" rel="noopener noreferrer">View master’s transcript (PDF) ↗</a>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-date">Sep 2022 — Jul 2025</div>
+                        <div class="timeline-content">
+                            <h3>Bachelor’s in Microengineering</h3>
+                            <p class="organization">EPFL · Lausanne, Switzerland</p>
+                            <p>Average grade: 5.25/6.</p>
+                            <a class="transcript-link" href="Bachelor%20Transcript.pdf" target="_blank" rel="noopener noreferrer">View bachelor’s transcript (PDF) ↗</a>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-date">Aug 2024 — Jun 2025</div>
+                        <div class="timeline-content">
+                            <h3>Exchange Year · Electrical Engineering and Computer Science</h3>
+                            <p class="organization">KTH Royal Institute of Technology · Stockholm, Sweden</p>
+                            <p>Selected for an exchange year during my bachelor’s degree.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-date">Sep 2019 — Jul 2022</div>
+                        <div class="timeline-content">
+                            <h3>International Baccalaureate Option (OIB) · American Section</h3>
+                            <p class="organization">Lycée International de Valbonne · Sophia Antipolis, France</p>
+                            <p>Result: 17.43/20, with honors. French Aeronautics Initiation Certificate (BIA).</p>
+                        </div>
+                    </article>
+                </div>
             </div>
+        </section>
 
-            <h3>University Project</h3>
-
-            <p>
-              Explain what you created, the technical challenge involved,
-              and what you learned from the project.
-            </p>
-
-            <div class="tags">
-              <span>Java</span>
-              <span>Algorithms</span>
-              <span>Git</span>
+        <section class="section alternate-section" id="skills">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Skills &amp; Interests</h2>
+                </div>
+                <div class="skills-grid">
+                    <div>
+                        <h3>Programming</h3>
+                        <div class="tags">
+                            <span>Python</span><span>C++</span><span>MATLAB</span>
+                            <span>Assembly</span><span>SQL</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Languages</h3>
+                        <p>French · Native<br />English · C2<br />Spanish · B2</p>
+                    </div>
+                    <div>
+                        <h3>Outside engineering</h3>
+                        <p>Judo, tennis, and diving (PADI Advanced).</p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <p class="project-note">
-              Source unavailable due to academic integrity requirements.
-            </p>
-          </article>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>© 2026 Jérôme Courdacy</p>
+            <a href="#top">Back to top ↑</a>
         </div>
-      </div>
-    </section>
-
-    <section class="section alternate-section" id="experience">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">Background</p>
-          <h2>Experience</h2>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">2026 — Present</div>
-
-            <div class="timeline-content">
-              <h3>Your Position</h3>
-              <p class="organization">Company, Lab, Club, or Organization</p>
-
-              <p>
-                Describe what you worked on, the responsibilities you had,
-                and any useful technical or professional skills you developed.
-              </p>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-date">2025 — 2026</div>
-
-            <div class="timeline-content">
-              <h3>Previous Experience</h3>
-              <p class="organization">Organization Name</p>
-
-              <p>
-                Add internships, part-time jobs, student organizations,
-                research work, volunteering, or other relevant experience.
-              </p>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-date">Current</div>
-
-            <div class="timeline-content">
-              <h3>Your Degree</h3>
-              <p class="organization">Your University</p>
-
-              <p>
-                Studying your degree here. You can optionally mention
-                relevant coursework, interests, or areas of specialization.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <div class="container contact-container">
-        <div>
-          <p class="section-label">Get in touch</p>
-          <h2>Contact</h2>
-
-          <p class="contact-text">
-            I’m always happy to connect about projects, internships,
-            technology, or interesting opportunities.
-          </p>
-        </div>
-
-        <div class="contact-links">
-          <a href="mailto:you@example.com">you@example.com</a>
-
-          <a
-            href="https://github.com/YOUR-USERNAME"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/YOUR-LINKEDIN"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-content">
-      <p>© 2026 Your Name</p>
-      <a href="#top">Back to top ↑</a>
-    </div>
-  </footer>
+    </footer>
 </body>
+
 </html>
